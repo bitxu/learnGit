@@ -15,4 +15,17 @@ git reflog  查看命令历史，当git log没法获得commit id时，可以看�
 工作区和暂存区
 git init 所在的文件就是我们的工作区
 
+版本库：git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD
 
+第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；
+第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。
+git status 查看当前工作区和版本库的状态
+	Changes not staged for commit:  更改需要提交的
+	Untracked files        没有被添加的文件
+	Changes to be committed:
+	nothing to commit (working directory clean) 没有更改需要提交
+——————————————————————————————————————————————————————————————————————————
+管理修改
+第一次修改 -> git add -> 第二次修改 -> git commit
+第一次修改 -> git add -> 第二次修改 -> git add -> git commit
+用git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新版本的区别
