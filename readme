@@ -2,3 +2,12 @@
 添加文件到仓库，分两步
 第一步：git add <file> 
 第二步: git commit -m 完成
+
+时光穿梭机
+git log 查看历史记录
+git log --pretty=online 查看简洁的历史记录
+HEAD   代表当前的版本  HEAD^ 代表上一个版本  HEAD^^ 代表上上个版本
+git reset --hard HEAD^   回退到上一个版本
+git reset --hard <comment id>  返回到commit id对应的版本  可以又回到现在  commit id 不用写全
+git reflog  查看命令历史，当git log没法获得commit id时，可以看到某一个命令对应的commit id
+
