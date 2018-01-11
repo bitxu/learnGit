@@ -1,1 +1,4 @@
-learnGit
+初始化git仓库 git init
+添加文件到仓库，分两步
+第一步：git add <file> 
+第二步: git commit -m 完成
