@@ -1,0 +1,7 @@
+远程仓库
+1、注册一个github账户
+2、在本地生成SSH KEY 
+	ssh-keygen -t rsa -C "youremail@example.com"
+	用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人
+3、在github上配置
+	github->setting->ssh->“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容
